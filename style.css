@@ -29,13 +29,42 @@ body {
 }
 
 .card-nft {
-  background-image: url(images/image-equilibrium.jpg);
-  background-size: cover;
-  background-position: center;
+  position: relative;
   width: 260px;
   margin: 0 auto;
   height: 260px;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
+  display: flex;
+}
+
+.img-equilibrium {
+  border-radius: 0.4rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+
+  &&:hover {
+    background-color: hsl(178, 100%, 50%, 0.4);
+    cursor: pointer;
+  }
+}
+
+.overlay:hover .eye-hover {
+  display: block;
+}
+
+.eye-hover {
+  align-self: center;
+  display: none;
 }
 
 .textos {
@@ -47,6 +76,11 @@ body {
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+
+  &&:hover {
+    color: var(--cyan);
+    cursor: pointer;
+  }
 }
 
 .card-parrafo {
@@ -114,4 +148,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   margin-left: 5px;
+
+  &&:hover {
+    color: var(--cyan);
+    cursor: pointer;
+  }
 }

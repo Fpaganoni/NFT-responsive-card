@@ -1,4 +1,4 @@
-git<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,45 +10,56 @@ git<!DOCTYPE html>
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/atropos@2.0.2/atropos.min.css">
+    <script src="https://unpkg.com/atropos@2.0.2/atropos.min.js"></script>
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
-    <div class="card-container">
-      <figure class="card-nft">
-        <img class="img-equilibrium" src="./images//image-equilibrium.jpg" alt="image nft equilibrium" width="100%" height="100%">
-        <div class="overlay">
-          <img class="eye-hover" src="./images/icon-view.svg" alt="eye" width="40px" height="40px">
-        </div>
-      </figure>
+    <div class="atropos my-atropos">
+      <div class="atropos-scale">
+        <div class="atropos-rotate">
+          <div class="atropos-inner">
+            <div class="card-container">
+              <figure class="card-nft" data-atropos-offset="5">
+                  <img class="img-equilibrium" src="./images//image-equilibrium.jpg" alt="image nft equilibrium" width="100%" height="100%">
+                  <div class="overlay" >
+                    <img class="eye-hover" src="./images/icon-view.svg" alt="eye" width="40px" height="40px">
+                  </div>
+              </figure>
 
-      <section class="textos">
-        <h3 class="card-titulo">Equilibrium #3429</h3>
-        <p class="card-parrafo">
-          Our Equilibrium collection promotes balance and calm.
-        </p>
-        <div class="card-precio">
-          <div class="card-precio-ethereum alineacion">
-            <img
-              src="images/icon-ethereum.svg"
-              alt="imagen de logotipo de ethereum"
-            />
-            <h5 class="card-ethereum">0.041 ETH</h5>
-          </div>
-          <div class="card-dias alineacion">
-            <img src="images/icon-clock.svg" alt="icono de un reloj " />
-            <h5 class="card-dias-restantes">3 days left</h5>
+              <div class="textos">
+                <h3 class="card-titulo" data-atropos-offset="5">Equilibrium #3429</h3>
+                <p class="card-parrafo" data-atropos-offset="5">
+                  Our Equilibrium collection promotes balance and calm.
+                </p>
+                <div class="card-precio">
+                  <div class="card-precio-ethereum alineacion">
+                    <img
+                      src="images/icon-ethereum.svg"
+                      alt="imagen de logotipo de ethereum"
+                    />
+                    <h5 class="card-ethereum">0.041 ETH</h5>
+                  </div>
+                  <div class="card-dias alineacion">
+                    <img src="images/icon-clock.svg" alt="icono de un reloj " />
+                    <h5 class="card-dias-restantes">3 days left</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="creador">
+                <img
+                  src="images/image-avatar.png"
+                  alt="imagen del creador"
+                  class="img-avatar"
+                />
+                <p class="card-section-creador">Creation of <h6 class="card-creador-nombre">Jules Wyvern</h6></p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section class="creador">
-        <img
-          src="images/image-avatar.png"
-          alt="imagen del creador"
-          class="img-avatar"
-        />
-        <p class="card-section-creador">Creation of <h6 class="card-creador-nombre">Jules Wyvern</h6></p>
-      </section>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

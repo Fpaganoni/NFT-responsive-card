@@ -154,3 +154,16 @@ body {
     cursor: pointer;
   }
 }
+
+/** Atropos */
+
+/* Efectos 3D adicionales */
+.my-atropos {
+  width: 350px;
+  height: 550px;
+  margin: 50px auto;
+}
+
+.card-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
